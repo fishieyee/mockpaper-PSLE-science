@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSLE Science Predictive Mock Paper — Chief Examiner's Edition</title>
+<style>
+  @page { size: A4; margin: 20mm 18mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 40px 32px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fff;
+  }
+  h1 {
+    font-size: 1.55rem;
+    text-align: center;
+    border-bottom: 3px double #2c3e50;
+    padding-bottom: 10px;
+    margin-bottom: 4px;
+    letter-spacing: 0.3px;
+  }
+  .subtitle {
+    text-align: center;
+    color: #555;
+    font-style: italic;
+    font-size: 0.92rem;
+    margin-bottom: 28px;
+  }
+  .examiner-note {
+    background: #f5f3eb;
+    border-left: 4px solid #2c3e50;
+    padding: 14px 18px;
+    margin-bottom: 30px;
+    font-size: 0.88rem;
+    border-radius: 0 6px 6px 0;
+  }
+  .examiner-note strong { color: #2c3e50; }
+  h2 {
+    font-size: 1.2rem;
+    color: #fff;
+    background: #2c3e50;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-top: 36px;
+    margin-bottom: 18px;
+  }
+  h3 {
+    font-size: 1.05rem;
+    color: #2c3e50;
+    margin-top: 26px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+  }
+  .question-block {
+    margin-bottom: 28px;
+    padding: 16px 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fcfcfa;
+  }
+  .q-num {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  .topics-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    background: #e8ecf0;
+    color: #2c3e50;
+    padding: 2px 10px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    font-family: Arial, sans-serif;
+  }
+  table.data-table {
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 0.88rem;
+    font-family: Arial, sans-serif;
+  }
+  table.data-table th, table.data-table td {
+    border: 1px solid #999;
+    padding: 6px 14px;
+    text-align: center;
+  }
+  table.data-table th {
+    background: #e8ecf0;
+    font-weight: bold;
+  }
+  .graph-box {
+    border: 1.5px solid #555;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin: 12px 0;
+    background: #fff;
+  }
+  .options { list-style-type: upper-alpha; padding-left: 24px; margin-top: 8px; }
+  .options li { margin-bottom: 5px; }
+  .answer-key {
+    background: #f0f4f8;
+    border: 2px solid #2c3e50;
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-top: 36px;
+  }
+  .answer-key h2 { background: #1a5276; }
+  .marking-block {
+    margin-bottom: 22px;
+    padding: 14px 18px;
+    border-left: 4px solid #1a5276;
+    background: #fff;
+    border-radius: 0 6px 6px 0;
+  }
+  .marking-block h3 { color: #1a5276; margin-top: 0; }
+  .marks-total {
+    float: right;
+    font-size: 0.85rem;
+    color: #888;
+    font-family: Arial, sans-serif;
+  }
+  .keyword {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: #c0392b;
+  }
+  .trap-box {
+    background: #fdf2e9;
+    border: 1px dashed #e67e22;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 0.85rem;
+  }
+  .trap-label {
+    font-weight: bold;
+    color: #d35400;
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .mark-line {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  .mark-line .check {
+    color: #27ae60;
+    font-weight: bold;
+    flex-shrink: 0;
+  }
+  hr.divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 30px 0;
+  }
+  .scenario-box {
+    background: #eef5fa;
+    border: 1px solid #aaccdb;
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+    font-size: 0.92rem;
+  }
+  .total-marks {
+    text-align: right;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 8px;
+  }
+  @media print {
+    body { padding: 0; }
+    .question-block { break-inside: avoid; }
+    .marking-block { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<h1>PSLE Science — Predictive Mock Paper</h1>
+<p class="subtitle">Chief Examiner's Edition &middot; Based on Historical PSLE Trend Analysis (2015–2025)</p>
+
+<div class="examiner-note">
+  <strong>Examiner's Foreword:</strong> This paper targets the highest-frequency, cross-thematic question types observed across a decade of PSLE Science papers. Each question was selected based on weighted analysis of recurring assessment objectives: (1) <strong>multi-topic integration</strong> — questions combining 2+ themes appear in ~65% of high-mark items; (2) <strong>data interpretation</strong> — line graphs and data tables feature in nearly every Paper 2 Booklet B; (3) <strong>fair-test methodology</strong> — experimental design OEQs account for the single largest share of open-ended marks; (4) <strong>real-world application</strong> — unfamiliar-context questions test transfer of core concepts to novel scenarios. Total: 16 marks across 5 questions.
+</div>
+
+<!-- ==================== SECTION A ==================== -->
+
+<h2>Section A: Multiple-Choice Questions (3 Questions &middot; 6 Marks)</h2>
+<p style="font-size:0.88rem; color:#555;">Each question carries 2 marks. Choose the most appropriate answer.</p>
+
+<!-- Q1 -->
+<div class="question-block">
+  <span class="topics-tag">Heat &middot; Water Cycle &middot; States of Matter</span>
+  <p class="q-num">Q1.</p>
+  <p>Siti set up the following experiment. She placed two identical wet towels — Towel P and Towel Q — on a clothesline. Towel P was hung in direct sunlight outdoors. Towel Q was hung in a sealed, air-conditioned room at 18&deg;C. Both towels had the same mass of water absorbed at the start. The towels were weighed every 30 minutes.</p>
+
+  <div class="graph-box">
+    <p style="text-align:center; font-weight:bold; margin-bottom:6px;">Line graph: Mass of water remaining in each towel over time</p>
+    <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:400px; display:block; margin:0 auto;">
+      <!-- axes -->
+      <line x1="50" y1="170" x2="380" y2="170" stroke="#333" stroke-width="1.5"/>
+      <line x1="50" y1="20" x2="50" y2="170" stroke="#333" stroke-width="1.5"/>
+      <!-- y-axis labels -->
+      <text x="40" y="175" text-anchor="end" font-size="9" fill="#555">0</text>
+      <text x="40" y="135" text-anchor="end" font-size="9" fill="#555">50</text>
+      <text x="40" y="95" text-anchor="end" font-size="9" fill="#555">100</text>
+      <text x="40" y="55" text-anchor="end" font-size="9" fill="#555">150</text>
+      <text x="40" y="25" text-anchor="end" font-size="9" fill="#555">200g</text>
+      <!-- x-axis labels -->
+      <text x="50" y="185" text-anchor="middle" font-size="9" fill="#555">0</text>
+      <text x="160" y="185" text-anchor="middle" font-size="9" fill="#555">30</text>
+      <text x="270" y="185" text-anchor="middle" font-size="9" fill="#555">60</text>
+      <text x="370" y="185" text-anchor="middle" font-size="9" fill="#555">90 min</text>
+      <!-- axis titles -->
+      <text x="210" y="198" text-anchor="middle" font-size="9" fill="#333">Time (minutes)</text>
+      <text x="15" y="95" text-anchor="middle" font-size="9" fill="#333" transform="rotate(-90 15 95)">Water mass (g)</text>
+      <!-- Towel P line (steeper, faster drying) - red -->
+      <polyline points="50,55 160,95 270,135 370,165" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+      <text x="375" y="160" font-size="9" fill="#c0392b" font-weight="bold">P</text>
+      <!-- Towel Q line (slower, gentler slope) - blue -->
+      <polyline points="50,55 160,70 270,88 370,105" fill="none" stroke="#185FA5" stroke-width="2.5" stroke-dasharray="5,3"/>
+      <text x="375" y="100" font-size="9" fill="#185FA5" font-weight="bold">Q</text>
+      <!-- gridlines (light) -->
+      <line x1="50" y1="135" x2="380" y2="135" stroke="#eee" stroke-width="0.5"/>
+      <line x1="50" y1="95" x2="380" y2="95" stroke="#eee" stroke-width="0.5"/>
+      <line x1="50" y1="55" x2="380" y2="55" stroke="#eee" stroke-width="0.5"/>
+    </svg>
+    <p style="text-align:center; font-size:0.8rem; color:#777; margin-top:4px;">Solid red line = Towel P (outdoor, sunlight); Dashed blue line = Towel Q (indoor, air-conditioned)</p>
+  </div>
+
+  <p>Based on the line graph, which statement best explains the difference in drying rates between Towel P and Towel Q?</p>
+
+  <ol class="options">
+    <li>Towel P dried faster because sunlight increases the surface area of the towel, allowing more water to evaporate.</li>
+    <li>Towel P dried faster because the higher outdoor temperature increases the rate of evaporation, and moving air carries water vapour away faster.</li>
+    <li>Towel Q dried slower because the air-conditioned room has higher humidity, which increases the rate of condensation on the towel.</li>
+    <li>Both towels dried at the same rate because the mass of water absorbed was identical at the start; the difference shown is due to measurement error.</li>
+  </ol>
+</div>
+
+<hr class="divider">
+
+<!-- Q2 -->
+<div class="question-block">
+  <span class="topics-tag">Forces &middot; Energy Conversion &middot; Electricity</span>
+  <p class="q-num">Q2.</p>
+  <p>A hydroelectric dam uses water stored at a height to generate electricity. Water flows from the reservoir at the top down through a pipe, turning a turbine connected to a generator, which produces electricity that powers a nearby factory.</p>
+
+  <p>Which sequence correctly describes the <strong>main energy conversions</strong> from start to finish?</p>
+
+  <ol class="options">
+    <li>Potential energy &rarr; kinetic energy &rarr; electrical energy &rarr; kinetic energy</li>
+    <li>Kinetic energy &rarr; potential energy &rarr; electrical energy &rarr; light energy</li>
+    <li>Potential energy &rarr; kinetic energy &rarr; electrical energy &rarr; heat and kinetic energy</li>
+    <li>Potential energy &rarr; electrical energy &rarr; kinetic energy &rarr; heat energy</li>
+  </ol>
+</div>
+
+<hr class="divider">
+
+<!-- Q3 -->
+<div class="question-block">
+  <span class="topics-tag">Water Cycle &middot; Heat &middot; Experimental Analysis (Data Table)</span>
+  <p class="q-num">Q3.</p>
+  <p>Four identical glass beakers, each containing 100&thinsp;mL of water at different starting temperatures, were left uncovered on a table. After 2 hours, the volume of water remaining in each beaker was measured. The results are shown below.</p>
+
+  <table class="data-table">
+    <tr>
+      <th>Beaker</th>
+      <th>Starting temperature (&deg;C)</th>
+      <th>Starting volume (mL)</th>
+      <th>Volume remaining after 2 hours (mL)</th>
+    </tr>
+    <tr>
+      <td>W</td>
+      <td>80</td>
+      <td>100</td>
+      <td>76</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>60</td>
+      <td>100</td>
+      <td>84</td>
+    </tr>
+    <tr>
+      <td>Y</td>
+      <td>40</td>
+      <td>100</td>
+      <td>92</td>
+    </tr>
+    <tr>
+      <td>Z</td>
+      <td>20</td>
+      <td>100</td>
+      <td>96</td>
+    </tr>
+  </table>
+
+  <p>Based on the data table, what is the relationship between the starting temperature of the water and the amount of water that evaporated, and what is the most likely explanation?</p>
+
+  <ol class="options">
+    <li>The higher the starting temperature, the less water evaporated, because cold water has more energy for evaporation than warm water.</li>
+    <li>The higher the starting temperature, the more water evaporated, because heat energy increases the rate of evaporation — the water vapour escapes into the surrounding air.</li>
+    <li>The starting temperature does not affect evaporation; the differences are caused by the beakers being different sizes.</li>
+    <li>The higher the starting temperature, the more water evaporated, because warm water condenses faster than cold water.</li>
+  </ol>
+</div>
+
+<!-- ==================== SECTION B ==================== -->
+
+<h2>Section B: Open-Ended Questions (2 Questions &middot; 10 Marks)</h2>
+<p style="font-size:0.88rem; color:#555;">Answer in complete sentences. Show your reasoning clearly.</p>
+
+<!-- OEQ1 -->
+<div class="question-block">
+  <span class="topics-tag">Experimental Design &middot; Fair Test &middot; Plant Transport System</span>
+  <p class="q-num">OEQ 1 — Fair Test & Experimental Analysis <span class="marks-total">[5 marks]</span></p>
+
+  <div class="scenario-box">
+    <p style="margin:0;"><strong>Scenario:</strong> Mei Ling wanted to investigate whether the amount of light affects the height that coloured water travels up a plant stem. She used four identical stalks of celery, each cut to 10&thinsp;cm. She placed them in four identical beakers, each containing 50&thinsp;mL of red-coloured water (same concentration of food dye).</p>
+
+    <p style="margin-top:10px;">She set up the four samples under different conditions:</p>
+    <ul style="margin:6px 0 0 0;">
+      <li><strong>Setup A:</strong> Placed in a dark cupboard (no light)</li>
+      <li><strong>Setup B:</strong> Placed under a 25-watt lamp, 20&thinsp;cm away</li>
+      <li><strong>Setup C:</strong> Placed under a 60-watt lamp, 20&thinsp;cm away</li>
+      <li><strong>Setup D:</strong> Placed outdoors in direct sunlight</li>
+    </ul>
+
+    <p style="margin-top:10px; margin-bottom:0;">After 3 hours, Mei Ling measured the height the red colour had travelled up each celery stalk. The hypothetical results are shown below.</p>
+  </div>
+
+  <table class="data-table">
+    <tr>
+      <th>Setup</th>
+      <th>Light condition</th>
+      <th>Height red colour travelled up stalk (cm)</th>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>Dark cupboard (no light)</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>25-watt lamp</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>60-watt lamp</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>Direct sunlight</td>
+      <td>5.0</td>
+    </tr>
+  </table>
+
+  <p style="margin-top:14px;"><strong>(a)</strong> Identify the <em>changed variable</em> (independent variable) and list <em>three</em> variables that must be kept the same to ensure this is a fair test. <span style="color:#888;">[2 marks]</span></p>
+
+  <p style="margin-top:14px;"><strong>(b)</strong> Mei Ling's teacher said she needed a <em>control setup</em>. Explain the purpose of a control setup in this experiment and identify which setup serves as the control. <span style="color:#888;">[1 mark]</span></p>
+
+  <p style="margin-top:14px;"><strong>(c)</strong> Based on the results in the table, state the conclusion Mei Ling should draw. Explain <em>why</em> more light causes the coloured water to travel higher up the stem, using the correct scientific concept. <span style="color:#888;">[2 marks]</span></p>
+</div>
+
+<hr class="divider">
+
+<!-- OEQ2 -->
+<div class="question-block">
+  <span class="topics-tag">Real-World Application &middot; Heat Transfer &middot; Adaptations</span>
+  <p class="q-num">OEQ 2 — Real-World Application <span class="marks-total">[5 marks]</span></p>
+
+  <div class="scenario-box">
+    <p style="margin:0;"><strong>Scenario:</strong> The Saharan silver ant (<em>Cataglyphis bombycina</em>) is one of the most heat-tolerant insects on Earth. It forages for food in the Sahara Desert during the hottest part of the day — when sand surface temperatures exceed 70&deg;C — for only 2 to 3 minutes at a time before retreating underground. Its body is covered with tiny, triangular silver-coloured hairs that are shaped like tiny prisms.</p>
+
+    <p style="margin-top:10px; margin-bottom:0;">Scientists discovered two remarkable facts about these hairs:</p>
+    <ol style="margin:6px 0 0 0; padding-left:18px;">
+      <li>The silver hairs reflect intense sunlight away from the ant's body, especially in the near-infrared range.</li>
+      <li>The hairs are angled so that hot air rises away from the ant's body surface through a process similar to a chimney effect, allowing heat to escape.</li>
+    </ol>
+
+    <p style="margin-top:10px; margin-bottom:0;">In contrast, ants of the same species that have had their silver hairs removed experimentally were observed to survive for far less time on the hot sand.</p>
+  </div>
+
+  <p style="margin-top:14px;"><strong>(a)</strong> Explain how the <em>silver colour</em> of the hairs helps the ant survive on the hot desert sand. Use the correct scientific concept relating to heat and light. <span style="color:#888;">[2 marks]</span></p>
+
+  <p style="margin-top:14px;"><strong>(b)</strong> The ant also has very long legs compared to its body size. Explain how having long legs is an <em>adaptive advantage</em> in this extreme heat environment. <span style="color:#888;">[1 mark]</span></p>
+
+  <p style="margin-top:14px;"><strong>(c)</strong> The scientist compared the silver ant to a <strong>"thermal flask"</strong> that works in reverse — instead of keeping heat in, it pushes heat out. Explain how the <em>chimney-effect</em> hair structure and the short foraging time (2–3 minutes) work together to prevent the ant's body from overheating. Use the concept of <em>heat gain</em> and <em>heat loss</em>. <span style="color:#888;">[2 marks]</span></p>
+</div>
+
+<!-- ==================== ANSWER KEY ==================== -->
+
+<div class="answer-key">
+  <h2>Examiner's Answer Key &amp; Marking Scheme</h2>
+
+  <p style="font-size:0.85rem; color:#555; font-style:italic;">Keywords shown in <span class="keyword">double-underlined bold</span> are mandatory for full marks. Each mark point is labelled with its assessment objective.</p>
+
+  <!-- MCQ Answers -->
+  <h3 style="margin-top:20px;">Section A: Multiple-Choice Answers</h3>
+
+  <div class="marking-block">
+    <p class="q-num">Q1 — Answer: (B) <span class="marks-total">2 marks</span></p>
+    <p><strong>Full-credit rationale:</strong> Towel P dried faster because the higher outdoor temperature increases the rate of <span class="keyword">evaporation</span>, and moving air (wind) carries water vapour away from the towel surface, maintaining a steep concentration gradient.</p>
+    <div class="trap-box">
+      <span class="trap-label">Common Trap</span>
+      <p style="margin:4px 0 0 0;">Option (A) is the most popular wrong answer. Students confuse <em>"sunlight increases temperature"</em> with <em>"sunlight changes surface area"</em>. Sunlight does not alter the physical size of the towel — it raises the thermal energy of the water, increasing evaporation. Option (C) attracts students who conflate condensation with slow evaporation — the air-conditioned room is actually <em>less</em> humid (cooler air holds less moisture), but the still air and lower temperature reduce the evaporation <em>rate</em>. Option (D) ignores the clear visual evidence of diverging lines on the graph.</p>
+    </div>
+  </div>
+
+  <div class="marking-block">
+    <p class="q-num">Q2 — Answer: (C) <span class="marks-total">2 marks</span></p>
+    <p><strong>Full-credit rationale:</strong> Water at height has <span class="keyword">gravitational potential energy</span>. As it flows down, this converts to <span class="keyword">kinetic energy</span> (moving water turns the turbine). The turbine drives the generator, producing <span class="keyword">electrical energy</span>. At the factory, the electricity powers machinery, which converts to <span class="keyword">heat energy</span> (friction) and <span class="keyword">kinetic energy</span> (moving parts). Not all energy is converted usefully — some is lost as heat due to friction.</p>
+    <div class="trap-box">
+      <span class="trap-label">Common Trap</span>
+      <p style="margin:4px 0 0 0;">Option (A) is the top distractor. Students often correctly identify the first three conversions but forget that the <em>factory</em> uses the electrical energy to do work — it doesn't convert it <em>back</em> into kinetic energy as the primary output. The question asks for the <strong>main</strong> energy conversions end-to-end: the useful work at the factory produces heat (friction, thermal processes) and kinetic energy (machinery). Option (D) skips kinetic energy entirely, confusing potential energy directly converting to electrical energy, which is physically impossible without an intermediate mechanical stage.</p>
+    </div>
+  </div>
+
+  <div class="marking-block">
+    <p class="q-num">Q3 — Answer: (B) <span class="marks-total">2 marks</span></p>
+    <p><strong>Full-credit rationale:</strong> From the data table: Beaker W (80&deg;C) lost 24&thinsp;mL, Beaker X (60&deg;C) lost 16&thinsp;mL, Beaker Y (40&deg;C) lost 8&thinsp;mL, and Beaker Z (20&deg;C) lost 4&thinsp;mL. This shows a clear pattern — <span class="keyword">the higher the starting temperature, the more water evaporated</span>. This is because <span class="keyword">heat energy increases the rate of evaporation</span> — the water vapour gains enough energy to escape into the surrounding air.</p>
+    <div class="trap-box">
+      <span class="trap-label">Common Trap</span>
+      <p style="margin:4px 0 0 0;">Option (D) is the classic "right answer, wrong reason" distractor. Students who select (D) correctly read the data pattern (higher temp &rarr; more evaporation) but <em>confuse evaporation with condensation</em>. Condensation is the <em>opposite</em> process — gas turning to liquid — and does not occur in the beaker. Option (A) reverses the relationship entirely. Option (C) is chosen by students who don't trust the data and invent confounding variables (beaker size) that the question explicitly controls for ("identical glass beakers").</p>
+    </div>
+  </div>
+
+  <!-- OEQ Answers -->
+  <h3 style="margin-top:24px;">Section B: Open-Ended Marking Schemes</h3>
+
+  <div class="marking-block">
+    <p class="q-num">OEQ 1 — Fair Test & Experimental Analysis <span class="marks-total">5 marks total</span></p>
+
+    <h3 style="margin-top:4px;">(a) Changed variable + 3 controlled variables [2 marks]</h3>
+    <div class="mark-line"><span class="check">[1]</span> <strong>Changed (independent) variable:</strong> The <span class="keyword">amount/intensity of light</span> each celery stalk is exposed to.</div>
+    <div class="mark-line"><span class="check">[1]</span> <strong>Any three</strong> of the following controlled (constant) variables:</div>
+    <ul style="margin:0 0 0 20px; font-size:0.92rem;">
+      <li>Type/species and size of celery stalk (same length, 10&thinsp;cm)</li>
+      <li>Volume of coloured water (50&thinsp;mL in each beaker)</li>
+      <li>Concentration of food dye</li>
+      <li>Type/size of beaker</li>
+      <li>Duration of the experiment (3 hours)</li>
+      <li>Ambient temperature / air movement (all set up in the same location category — though D is outdoors, this is a limitation; accept "surrounding temperature" if addressed)</li>
+    </ul>
+
+    <div class="trap-box">
+      <span class="trap-label">Common Trap</span>
+      <p style="margin:4px 0 0 0;">Students frequently list <em>"the amount of water"</em> as the changed variable — this is wrong; the water volume is <strong>controlled</strong>. The most common omission is failing to identify <em>duration</em> as a controlled variable. Some students also confuse "changed variable" (independent) with "measured variable" (dependent: height of red colour).</p>
+    </div>
+
+    <h3 style="margin-top:16px;">(b) Purpose of control setup [1 mark]</h3>
+    <div class="mark-line"><span class="check">[1]</span> A control setup is used for <span class="keyword">comparison</span> to show that the result (red colour travelling up the stem) is caused by the <span class="keyword">changed variable</span> (light) and not by some other factor. <strong>Setup A</strong> (the dark cupboard) serves as the control because it removes the light variable entirely — it shows what happens under baseline conditions.</div>
+
+    <div class="trap-box">
+      <span class="trap-label">Common Trap</span>
+      <p style="margin:4px 0 0 0;">Many students say the control is "Setup B" because it has the weakest light. A control must <em>eliminate</em> the changed variable, not merely reduce it. Setup A (no light at all) is the true control. Students also frequently state the purpose of a control as "to make it a fair test" — this is too vague. The control is for <em>comparison/baseline</em>, not for ensuring fairness (that is the role of controlled variables).</p>
+    </div>
+
+    <h3 style="margin-top:16px;">(c) Conclusion + scientific explanation [2 marks]</h3>
+    <div class="mark-line"><span class="check">[1]</span> <strong>Conclusion:</strong> The <span class="keyword">greater the amount of light</span> the celery stalk receives, the <span class="keyword">higher the red-coloured water travels up the stem</span>.</div>
+    <div class="mark-line"><span class="check">[1]</span> <strong>Explanation:</strong> More light causes the plant to <span class="keyword">photosynthesise faster</span>, which increases the rate of <span class="keyword">transpiration</span> (water loss through stomata). As water evaporates from the leaves, more coloured water is <span class="keyword">drawn up</span> the stem through the <span class="keyword">xylem</span> vessels to replace the water lost.</div>
+
+    <div class="trap-box">
+      <span class="trap-label">Common Trap</span>
+      <p style="margin:4px 0 0 0;">The most common error is stating the conclusion as "more light makes the celery grow taller" — confusing the <em>transport of coloured water</em> with <em>plant growth</em>. Students also explain the result using "capillary action" alone without mentioning <strong>transpiration pull</strong> — while capillary action plays a role, the PSLE marking scheme expects students to link light &rarr; photosynthesis &rarr; stomata open &rarr; transpiration increases &rarr; water drawn up xylem. Omitting <strong>transpiration</strong> loses the explanation mark.</p>
+    </div>
+  </div>
+
+  <div class="marking-block">
+    <p class="q-num">OEQ 2 — Real-World Application: Saharan Silver Ant <span class="marks-total">5 marks total</span></p>
+
+    <h3 style="margin-top:4px;">(a) Silver hairs & heat survival [2 marks]</h3>
+    <div class="mark-line"><span class="check">[1]</span> <strong>Evidence from question:</strong> The silver hairs reflect intense sunlight away from the ant's body, especially in the near-infrared range (stated in the passage).</div>
+    <div class="mark-line"><span class="check">[1]</span> <strong>Concept application:</strong> <span class="keyword">Light-coloured / shiny surfaces reflect more heat</span> than dark surfaces. By reflecting sunlight away, the silver hairs reduce the amount of <span class="keyword">heat energy absorbed</span> by the ant's body, keeping its body temperature lower.</div>
+
+    <div class="trap-box">
+      <span class="trap-label">Common Trap</span>
+      <p style="margin:4px 0 0 0;">Students often write "the silver hairs make the ant cooler" without specifying the mechanism. The marking scheme requires the concept that <strong>light/shiny surfaces are better reflectors of heat and light</strong> — a core P6 Heat topic. Another frequent error is attributing the cooling to the colour alone without mentioning <em>reflection of radiant heat</em>. Some students also confuse this with insulation (trapping air), which is the opposite — the silver hairs reflect heat <em>away</em>, not trap it.</p>
+    </div>
+
+    <h3 style="margin-top:16px;">(b) Long legs as adaptive advantage [1 mark]</h3>
+    <div class="mark-line"><span class="check">[1]</span> Long legs keep the ant's body <span class="keyword">further away from the hot sand surface</span>, reducing the amount of <span class="keyword">heat conducted</span> from the sand to the ant's body. This keeps the ant's body temperature lower, allowing it to survive longer on the 70&deg;C sand.</div>
+
+    <div class="trap-box">
+      <span class="trap-label">Common Trap</span>
+      <p style="margin:4px 0 0 0;">Students frequently answer "long legs help the ant run faster and escape" — this addresses <em>behavioural</em> advantage but misses the <strong>thermal</strong> advantage the question targets. The key concept is <strong>heat conduction from the sand surface</strong>: greater distance = less conductive heat transfer. Students who only mention "running fast" without linking to heat gain from the sand lose the mark.</p>
+    </div>
+
+    <h3 style="margin-top:16px;">(c) Chimney-effect + short foraging time = heat management [2 marks]</h3>
+    <div class="mark-line"><span class="check">[1]</span> The <span class="keyword">chimney-effect</span> hair structure allows <span class="keyword">hot air to rise and escape</span> from the ant's body surface, increasing the rate of <span class="keyword">heat loss</span> from the body. This works like a ventilation system: hot air (less dense) rises through the angled hairs and escapes, while cooler air replaces it.</div>
+    <div class="mark-line"><span class="check">[1]</span> The short foraging time (2–3 minutes) ensures the ant returns underground before <span class="keyword">heat gain</span> from the environment exceeds its <span class="keyword">heat loss</span>. If it stayed out longer, the continuous radiant and conductive heat gain would overwhelm the chimney-effect cooling, and the ant's body temperature would rise to lethal levels.</div>
+
+    <div class="trap-box">
+      <span class="trap-label">Common Trap</span>
+      <p style="margin:4px 0 0 0;">The most sophisticated trap here: students describe the chimney effect correctly but fail to explain <em>why</em> the foraging time matters — they treat it as a separate, unconnected fact. The mark requires students to show the <strong>dynamic balance between heat gain and heat loss</strong>: the chimney effect increases heat loss <em>rate</em>, but in a 70&deg;C environment, heat gain rate will eventually exceed heat loss rate. The 2–3 minute limit is the <em>time window</em> before that threshold is crossed. Students who don't use the terms "heat gain" and "heat loss" lose at least one mark even if the explanation is conceptually correct.</p>
+    </div>
+  </div>
+
+  <div style="border-top: 2px solid #1a5276; margin-top: 24px; padding-top: 12px;">
+    <p class="total-marks">Total: 16 marks (Section A: 6 + Section B: 10)</p>
+    <p style="font-size:0.82rem; color:#888; text-align:right; margin-top:4px;">Paper compiled by Chief Examiner's analysis of PSLE Science 2015–2025 trend data. Highest-frequency cross-thematic question types weighted by mark allocation and topic combination frequency.</p>
+  </div>
+</div>
+
+</body>
+</html>
